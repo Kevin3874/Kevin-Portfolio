@@ -13,29 +13,29 @@ const Home: NextPage = () => {
       <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c]">
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
           <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-            Welcome To 
-            <span> Kevin's </span> 
-            Portfolio
+            <Link href = {"/"}>
+              <span className="text-[hsl(280,100%,70%)]"> Kevin's </span>
+            </Link>
+            Projects
           </h1>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
             <Link
               className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-              href="https://create.t3.gg/en/usage/first-steps"
-              target="_blank"
+              href="https://github.com/Kevin3874"
             >
-              <h3 className="text-2xl font-bold">First Steps →</h3>
+              <h3 className="text-2xl font-bold">Github →</h3>
               <div className="text-lg">
-                Just the basics - Everything you need to know to set up your
-                database and authentication.
+                Link to my public Github repository with all of the projects I have worked on!
               </div>
             </Link>
             <Link
               className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-              href="projects"
+              href="https://kevinzhang25.notion.site/kevinzhang25/Kevin-Zhang-80f3a8cf8e704dc4bede040bc411037e"
             >
-              <h3 className="text-2xl font-bold">Check out my projects →</h3>
+              <h3 className="text-2xl font-bold">Documentation →</h3>
               <div className="text-lg">
-                Learn more about the teams and projects I have been invoved in.
+                Link to my public Notion page where I go more in-depth
+                about the details of each project!
               </div>
             </Link>
           </div>
