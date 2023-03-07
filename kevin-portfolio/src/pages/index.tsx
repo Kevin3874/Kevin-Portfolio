@@ -22,9 +22,9 @@ const Home: NextPage = () => {
               <img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/558f9c74-18ab-43b7-bbbf-2e14231c6e19/1645761961416.jfif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230307%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230307T055341Z&X-Amz-Expires=86400&X-Amz-Signature=ff5665655d6161306858666629a8528dbb7e67aa06df9ecfdb39fd7d7caea2a9&X-Amz-SignedHeaders=host&x-id=GetObject" />
               <div>
                 <h1 className="text-5xl font-bold text-white">About Me</h1>
-                <p className="py-6 text-white">Hello, I’m a current Johns Hopkins Undergraduate studying a B.S. in Computer Science and a 
+                <p className="py-6 text-white">Hello, I&apos;m a current Johns Hopkins Undergraduate studying a B.S. in Computer Science and a 
                  minor in both Applied Mathematics & Statistics and Computer Integrated Surgery. I hope to continue my
-                 education by pursuing Hopkin’s combined BS/MSE program in 4 years.</p>
+                 education by pursuing Hopkin&apos;s combined BS/MSE program in 4 years.</p>
                 <Link href = "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/3a76fe3b-6116-42c4-9a3d-9ad5ddbe8b16/
                 Kevin_Zhang_Resume.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=
                 AKIAT73L2G45EIPT3X45%2F20230307%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230307T060827Z&X-Amz-Expires=86400&X
