@@ -19,7 +19,7 @@ const Home: NextPage = () => {
           </h1>
           <div className="hero bg-base">
             <div className="hero-content flex-col lg:flex-row">
-              <img src="https://drive.google.com/file/d/1JhdNSzlwKE1g7GaoxrvKYD-IPhVTZKLK/view?usp=share_link" />            
+              <img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/052618a3-96f6-4ff2-bdbf-3b5efdca15e1/Portrait.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230308%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230308T153416Z&X-Amz-Expires=86400&X-Amz-Signature=2e1c7d7c0f86f1e400459b2e8f4600c761641e30bba808f353ca9a5a3927a50d&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Portrait.jpg%22&x-id=GetObject" alt = "My Image"/>            
               <div>
                 <h1 className="text-5xl font-bold text-white">About Me</h1>
                 <p className="py-6 text-white">{"Hello, I'm a current Johns Hopkins Undergraduate studying a B.S. in Computer Science and a minor in both Applied Mathematics & Statistics and Computer Integrated Surgery. I hope to continue my education by pursuing Hopkin's combined BS/MSE program in 4 years."}</p>
