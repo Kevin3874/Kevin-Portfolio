@@ -40,6 +40,7 @@ const Home: NextPage = () => {
                 about the details of each project!
               </div>
             </Link>
+            
           </div>
         </div>
       </main>
