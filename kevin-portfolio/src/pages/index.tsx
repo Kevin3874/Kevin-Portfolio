@@ -6,7 +6,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Create T3 App</title>
+        <title>{"Kevin's Porfolio"}</title>
         <meta name="description" content="Kevin Zhang Portfolio" />
         <link rel="icon" href="/KleanZ.ico" />
       </Head>
