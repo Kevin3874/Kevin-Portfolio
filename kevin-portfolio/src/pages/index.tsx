@@ -17,7 +17,7 @@ const Home: NextPage = () => {
           </h1>
           <div className="hero bg-base">
             <div className="hero-content flex-col lg:flex-row max-w-5xl">
-              <img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/052618a3-96f6-4ff2-bdbf-3b5efdca15e1/Portrait.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230308%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230308T153416Z&X-Amz-Expires=86400&X-Amz-Signature=2e1c7d7c0f86f1e400459b2e8f4600c761641e30bba808f353ca9a5a3927a50d&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Portrait.jpg%22&x-id=GetObject" alt = "My Image"
+              <img src="https://lh6.googleusercontent.com/EjVF2hhC1YbjDmeqfIsS5cMq1idMpONh8KCWlTuai-avYRjFd9AWGFXvbSqgWtHc44o=w2400" alt = "My Image"
               className="max-w-24 max-h-72"/>            
               <div>
                 <h1 className="text-4xl font-bold text-white">About Me</h1>
