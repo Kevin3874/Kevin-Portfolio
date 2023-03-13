@@ -10,7 +10,7 @@ const Home: NextPage = () => {
         <meta name="description" content="Kevin Zhang Portfolio" />
         <link rel="icon" href="/KleanZ.ico" />
       </Head>
-      <main className="flex h-screen flex-col items-center justify-between bg-gradient-to-b from-[#2a023f] to-[#052460]">
+      <main className="flex h-screen flex-col items-center justify-between bg-gradient-to-b from-[#2a023f] to-[#1f4186]">
         <div className="container flex flex-col items-center justify-center px-10 py-16 gap-10">
           <h1 className="text-2xl font-extrabold tracking-tight text-white sm:text-[5rem]">
             {"Hi, I'm Kevin"}
@@ -28,11 +28,11 @@ const Home: NextPage = () => {
                 <p className="pb-3 text-white">{"Firebase · React · MySQL · Next.js · Android Studio · Git "}</p>
                 <Link href = "https://kevinzhang25.notion.site/Resume-Download-1fcf8411f885460cb918ef2b9873cf3b" 
                 target={"_blank"}>
-                <button className="btn bg-[#18784e] p-4 text-white hover:bg-white/20">My Resume</button>
+                <button className="btn bg-[#2b46aa] p-4 text-white hover:bg-white/20">My Resume</button>
                 </Link>
                 <Link href ="mailto:kzhang77@jh.edu"
                 target={"_blank"}>
-                <button className="btn bg-[#18784e] p-4 text-white hover:bg-white/20 ml-5">Email Me</button>
+                <button className="btn bg-[#2b46aa] p-4 text-white hover:bg-white/20 ml-5">Email Me</button>
                 </Link>
               </div>
             </div>
@@ -40,33 +40,32 @@ const Home: NextPage = () => {
           <div className="container flex flex-row itmes-center justify-center">
             <Link
               className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-              href="projects"
-            >
+              href="projects">
               <h3 className="text-2xl font-bold">Check out my projects →</h3>
               <div className="text-lg">
                 Learn more about the teams and projects I have been invoved in.
               </div>
             </Link>
           </div>
-      </div>
-      <footer className="footer p-12 bg-neutral text-neutral-content gap-12 justify-center text-center bg-gradient-to-b from-[#020d4b] to-[#02054b] h-28">
-        <div className = "-translate-y-8 -translate-x-8 flex flex-col items-center">
-          <span className="footer-title">Email</span> 
-          <a className="text">zzsshwkevin@gmail.com</a>
-          <a className="text">kzhang77@jh.edu</a>
-        </div> 
-        <div className = "-translate-y-8 -translate-x-8 flex flex-col items-center">
-          <span className="footer-title">Phone & Cell</span> 
-          <a className="text">{"(813) 842- 6045"}</a>
-        </div> 
-        <div className = "-translate-y-8 -translate-x-8 flex flex-col items-center">
-          <span className="footer-title">LinkedIn</span> 
-          <Link href = "https://www.linkedin.com/in/kevinzhang25/"
-          target={"_blank"}>
-            <button className="link link-hover">Kevin Zhang</button>
-          </Link>
         </div>
-      </footer>
+        <footer className="footer p-12 bg-neutral text-neutral-content gap-12 justify-center text-center bg-gradient-to-b from-[#020d4b] to-[#02054b] h-28">
+          <div className = "-translate-y-8 -translate-x-8 flex flex-col items-center">
+            <span className="footer-title">Email</span> 
+            <a className="text">zzsshwkevin@gmail.com</a>
+            <a className="text">kzhang77@jh.edu</a>
+          </div> 
+          <div className = "-translate-y-8 -translate-x-8 flex flex-col items-center">
+            <span className="footer-title">Phone & Cell</span> 
+            <a className="text">{"(813) 842- 6045"}</a>
+          </div> 
+          <div className = "-translate-y-8 -translate-x-8 flex flex-col items-center">
+            <span className="footer-title">LinkedIn</span> 
+            <Link href = "https://www.linkedin.com/in/kevinzhang25/"
+            target={"_blank"}>
+              <button className="link link-hover">Kevin Zhang</button>
+            </Link>
+          </div>
+        </footer>
       </main>
     </>
   );
