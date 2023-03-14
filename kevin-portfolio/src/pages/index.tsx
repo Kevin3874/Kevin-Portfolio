@@ -8,6 +8,8 @@ const Home: NextPage = () => {
       <Head>
         <title>{"Kevin's Porfolio"}</title>
         <meta name="description" content="Kevin Zhang Portfolio" />
+        <meta name="author" content="Kevin Zhang" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/KleanZ.ico" />
       </Head>
       <main className="flex h-screen flex-col items-center justify-between bg-gradient-to-b from-[#2a023f] to-[#1f4186]">
