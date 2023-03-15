@@ -47,9 +47,7 @@ const Home: NextPage = () => {
             >
               <h3 className="text-2xl font-bold">Quest2Learn →</h3>
               <div className="text-lg">
-                Check out Quest2Learn! I am currently the Content and 
-                Research team leader as well as the Developer 
-                for the team's website.
+                {"Check out Quest2Learn! I am currently the Content and Research team leader as well as the Developer for the team's website."}
               </div>
             </Link>
           </div>
