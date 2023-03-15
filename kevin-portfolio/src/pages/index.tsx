@@ -7,7 +7,7 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>{"Kevin's Porfolio"}</title>
-        <meta name="description" content="Kevin Zhang Portfolio" />
+        <meta name="description" content="Learn more about my experiences and projects!" />
         <meta name="author" content="Kevin Zhang" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/KleanZ.ico" />
