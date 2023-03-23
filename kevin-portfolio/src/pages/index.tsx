@@ -20,7 +20,7 @@ const Home: NextPage = () => {
           <div className="hero bg-base">
             <div className="hero-content flex-col lg:flex-row max-w-5xl">
               <img src="https://lh6.googleusercontent.com/EjVF2hhC1YbjDmeqfIsS5cMq1idMpONh8KCWlTuai-avYRjFd9AWGFXvbSqgWtHc44o=w2400" alt = "My Image"
-              className="max-w-24 max-h-72"/>            
+              className="w-32 md:w-32 lg:w-48"/>            
               <div>
                 <h1 className="text-4xl font-bold text-white">About Me</h1>
                 <p className="pt-1 text-white">{"I'm a current Johns Hopkins Undergraduate studying a B.S. in Computer Science and a minor in Applied Mathematics & Statistics. I hope to continue my education by pursuing Hopkin's combined BS/MSE 4 year program."}</p>
