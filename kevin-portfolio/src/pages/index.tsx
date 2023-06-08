@@ -25,9 +25,9 @@ const Home: NextPage = () => {
                 <h1 className="text-4xl font-bold text-white text-center sm:text-left">About Me</h1>
                 <p className="pt-1 text-white text-center sm:text-left">{"I'm a current Johns Hopkins Undergraduate studying a B.S. in Computer Science and a minor in Applied Mathematics & Statistics. I hope to continue my education by pursuing Hopkin's combined BS/MSE 4 year program."}</p>
                 <p className="pt-3 text-white text-center sm:text-left">{"Some Languages I know:"}</p>
-                <p className="text-white text-center sm:text-left">{"Python · Java · C/C++ · JavaScript · HTML/CSS · SQL "}</p>
+                <p className="text-white text-center sm:text-left">{"Python · Java · C/C++ · JavaScript/TypeScript · HTML5 & CSS · Rust · C# "}</p>
                 <p className="pt-3 text-white text-center sm:text-left">{"Technologies:"}</p>
-                <p className="pb-3 text-white text-center sm:text-left">{"Firebase · React · MySQL · Next.js · Android Studio · Git "}</p>
+                <p className="pb-3 text-white text-center sm:text-left">{"Firebase · React.js · Next.js · Android Studio · Git · Node.js · Azure DevOps "}</p>
                 <Link href = "https://kevinzhang25.notion.site/Resume-Download-1fcf8411f885460cb918ef2b9873cf3b" 
                 target={"_blank"}>
                 <button className="btn bg-[#2b46aa] p-4 text-white hover:bg-white/20">My Resume</button>

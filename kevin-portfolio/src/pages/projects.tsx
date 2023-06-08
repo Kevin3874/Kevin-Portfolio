@@ -40,16 +40,6 @@ const Home: NextPage = () => {
                 about the details of each project!
               </div>
             </Link>
-            <Link
-              className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-              href="https://Q2L.app"
-              target="_blank"
-            >
-              <h3 className="text-2xl font-bold">Quest2Learn →</h3>
-              <div className="text-lg">
-                Check out Quest2Learn! I am currently the Project Lead and a Software Engineer for this startup.
-              </div>
-            </Link>
           </div>
         </div>
       </main>
