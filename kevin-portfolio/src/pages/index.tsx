@@ -27,7 +27,7 @@ const Home: NextPage = () => {
               <p className="mb-4 text-center max-w-lg mx-auto">{"I'm a current Johns Hopkins Undergraduate studying a B.S. in Computer Science and a minor in Applied Mathematics & Statistics. I hope to continue my education by pursuing Hopkin's combined BS/MSE 4 year program."}</p>
             </div>
             <p className="mb-2 text-center max-w-lg mx-auto">{"Some Languages I know:"}</p>
-            <p className="mb-2 text-center max-w-lg mx-auto">{"Python · Java · C/C++ · JavaScript/TypeScript · Rust · C# "}</p>
+            <p className="mb-2 text-center max-w-lg mx-auto">{"Python · Java · C/C++ · JavaScript/TypeScript · HTML/CSS · C# "}</p>
             <p className="mb-2 text-center max-w-lg mx-auto">{"Technologies:"}</p>
             <p className="mb-4 text-center max-w-lg mx-auto">{"Firebase · React.js · React Native · Next.js · Git · Node.js · Azure DevOps · Angular 6"}</p>
             <div className="flex gap-4 mb-4">
