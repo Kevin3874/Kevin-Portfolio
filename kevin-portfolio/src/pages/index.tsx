@@ -20,8 +20,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/KleanZ.ico" />
       </Head>
       <main className={`flex flex-col min-h-screen ${isLoaded ? 'animate-fade-in' : ''}`}>
-        <div className="flex-grow flex flex-row">
-          <div className="w-3/5 bg-[#1a237e] flex flex-col items-center justify-center text-white p-8">
+        <div className="flex-grow flex flex-col-reverse md:flex-row">
+          <div className="order-1 md:order-2 w-full md:w-3/5 bg-[#1a237e] flex flex-col items-center justify-center text-white p-8 relative">
             <div className={isLoaded ? 'animate-slide-in' : ''}>
               <h1 className="text-4xl font-bold mb-4 text-center">About Me</h1>
               <p className="mb-4 text-center max-w-lg mx-auto">{"I'm a current Johns Hopkins Undergraduate studying a B.S. in Computer Science and a minor in Applied Mathematics & Statistics. I hope to continue my education by pursuing Hopkin's combined BS/MSE 4 year program."}</p>
@@ -41,36 +41,34 @@ const Home: NextPage = () => {
               </Link>
             </div>
             <div className="flex justify-center">
-            <Link href="mailto:kzhang77@jh.edu"
+            <Link href="https://www.linkedin.com/in/kevinzhang25/"
                     target={"_blank"}>
-                <button className="btn bg-[#f5f5dc] p-3 text-[#333] hover:bg-[#e5e5cc]">Email Me</button>
+                <button className="btn bg-[#f5f5dc] p-3 text-[#333] hover:bg-[#e5e5cc]">LinkedIn</button>
               </Link>
             </div>
           </div>
-          <div className="w-2/5 bg-[#f5f5dc] flex flex-col items-center justify-center text-[#333] p-8">
+          <div className="order-2 md:order-1 w-full md:w-2/5 bg-[#f5f5dc] flex flex-col items-center justify-center text-[#333] p-8">
             <img src="https://lh6.googleusercontent.com/EjVF2hhC1YbjDmeqfIsS5cMq1idMpONh8KCWlTuai-avYRjFd9AWGFXvbSqgWtHc44o=w2400" alt="My Image"
                className={`w-48 md:w-72 mb-8 rounded-full shadow-lg`}/>
             <h1 className="text-5xl font-extrabold mb-4">Kevin Zhang</h1>
-            <h2 className="text-3xl typewriter">Fullstack Software Engineer</h2>
+            <div className="text-center">
+              <h2 className="text-3xl typewriter">Fullstack</h2>
+              <h2 className="text-3xl typewriter">Software Engineer</h2>
+            </div>
           </div>
         </div>
         <footer className="bg-white text-[#333] p-4 text-center">
-          <div className="flex justify-around items-center">
-            <div className="flex flex-col items-center">
-              <span className="footer-title">Email</span>
-              <a className="text">zzsshwkevin@gmail.com</a>
-              <a className="text">kzhang77@jh.edu</a>
-            </div>
-            <div className="flex flex-col items-center">
-              <span className="footer-title">Phone & Cell</span>
-              <a className="text">{"(813) 842- 6045"}</a>
-            </div>
-            <div className="flex flex-col items-center">
-              <span className="footer-title">LinkedIn</span>
-              <Link href="https://www.linkedin.com/in/kevinzhang25/"
-                    target={"_blank"}>
-                <button className="link link-hover">Kevin Zhang</button>
-              </Link>
+          <div className="max-w-2xl mx-auto">
+            <div className="flex flex-col sm:flex-row justify-center sm:justify-around items-center">
+              <div className="flex flex-col items-center mb-4 sm:mb-0">
+                <span className="footer-title">Email</span>
+                <a className="text">zzsshwkevin@gmail.com</a>
+                <a className="text">kzhang77@jh.edu</a>
+              </div>
+              <div className="flex flex-col items-center mb-4 sm:mb-0">
+                <span className="footer-title">Phone & Cell</span>
+                <a className="text">{"(813) 842- 6045"}</a>
+              </div>
             </div>
           </div>
         </footer>
@@ -81,6 +79,9 @@ const Home: NextPage = () => {
         }
         .animate-slide-in {
           animation: slideIn 3s;
+        }
+        .animate-spin-slow {
+          animation: spin 20s linear infinite;
         }
         .typewriter {
           overflow: hidden;
