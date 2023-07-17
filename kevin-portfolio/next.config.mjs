@@ -20,5 +20,11 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
+
+  env: {
+    EMAIL_USERNAME: process.env.EMAIL_USERNAME,
+    EMAIL_PASSWORD: process.env.EMAIL_PASSWORD,
+  },
 };
+
 export default config;
