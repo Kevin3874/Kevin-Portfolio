@@ -2,10 +2,9 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import { useEffect, useState } from 'react';
-import initializeScrollHandler from './scrollHandler.js';
+import initializeScrollHandler from './scripts/scrollHandler';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import handleFormSubmit from "./submitHandler";
 
 const Home: NextPage = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -28,9 +27,37 @@ const Home: NextPage = () => {
       return cleanup;
     }
   }, [isMobile]);
+  
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    if (!event.target.name.value || !event.target.email.value || !event.target.message.value) {
+      setFormErrors({
+        name: !event.target.name.value,
+        email: !event.target.email.value,
+        message: !event.target.message.value,
+      });
+      return;
+    }
 
-  const handleSubmit = (event) => {
-    handleFormSubmit(event, setFormErrors);
+    const response = await fetch('/api/sendEmail', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email: event.target.email.value,
+        message: event.target.message.value,
+        subject: `Portfolio Contact - ${event.target.name.value}`,
+      }),
+    });
+  
+    const data = await response.json();
+  
+    if (data.success) {
+      toast.success('Email has been sent! I will get back to you as soon as possible!', { position: toast.POSITION.TOP_RIGHT });
+    } else {
+      toast.error('Email could not be sent. Please try again later.', { position: toast.POSITION.TOP_RIGHT });
+    }
   };
   
   return (
@@ -78,7 +105,7 @@ const Home: NextPage = () => {
               my role shifted into a Web Developer, and eventually, a Team Lead. You can check out more about Quest2Learn
                 {<Link className="text-[#D4A373] link-hover" href="https://www.q2l.app/" target={"_blank"}> here.</Link>}</p>
               <p className="max-w-lg mx-auto mb-2">
-              During that time, I became a Python CA for Hopkin's Gateway course. I was responsible for holding office hours,
+              During that time, I became a Python CA for Hopkin&apos;s Gateway course. I was responsible for holding office hours,
               grading assignments, and helping students with their projects. I also joined a team called HopDrop, which focuses
               on creating a mobile app for Hopkins students to get their Mobile Orders delivered to them on campus.
               We started off as an Android app, and I am still curently working on the React Native version of the app.
@@ -178,9 +205,18 @@ const Home: NextPage = () => {
         </section>
         {!isMobile && (
           <nav className="fixed bottom-4 right-4 flex flex-col space-y-2">
-          <div className={`h-4 w-4 rounded-full cursor-pointer ${currentPage >= 1 ? 'bg-[#D4A373]' : 'bg-white'}`} onClick={() => {window.scrollTo({top: 0, behavior: 'smooth'}) ; setCurrentPage(1); currentPage >= 1 ? 'bg-[#D4A373]' : 'bg-white'}}></div>
-          <div className={`h-4 w-4 rounded-full cursor-pointer ${currentPage >= 2 ? 'bg-[#D4A373]' : 'bg-white'}`} onClick={() => {window.scrollTo({top: document.getElementById('section2').offsetTop, behavior: 'smooth'}); setCurrentPage(2); currentPage >= 2 ? 'bg-[#D4A373]' : 'bg-white'}}></div>
-          <div className={`h-4 w-4 rounded-full cursor-pointer ${currentPage === 3 ? 'bg-[#D4A373]' : 'bg-white'}`} onClick={() => {window.scrollTo({top: document.getElementById('section3').offsetTop, behavior: 'smooth'}); setCurrentPage(3); currentPage === 3 ? 'bg-[#D4A373]' : 'bg-white'}}></div>
+            <div className={`h-4 w-4 rounded-full cursor-pointer ${currentPage >= 1 ? 'bg-[#D4A373]' : 'bg-white'}`} onClick={() => {
+              window.scrollTo({top: 0, behavior: 'smooth'});
+              void setCurrentPage(1);
+            }}></div>
+            <div className={`h-4 w-4 rounded-full cursor-pointer ${currentPage >= 2 ? 'bg-[#D4A373]' : 'bg-white'}`} onClick={() => {
+              window.scrollTo({top: document.getElementById('section2')!.offsetTop, behavior: 'smooth'});
+              void setCurrentPage(2);
+            }}></div>
+            <div className={`h-4 w-4 rounded-full cursor-pointer ${currentPage === 3 ? 'bg-[#D4A373]' : 'bg-white'}`} onClick={() => {
+              window.scrollTo({top: document.getElementById('section3')!.offsetTop, behavior: 'smooth'});
+              void setCurrentPage(3);
+            }}></div>
         </nav>
         )}
       </main>
