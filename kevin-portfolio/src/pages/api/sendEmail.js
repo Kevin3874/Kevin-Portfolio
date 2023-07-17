@@ -3,9 +3,9 @@ import sgMail from '@sendgrid/mail';
 export default async function handler(req, res) {
   const { email, message, subject } = req.body;
 
-  const sendGridApiKey = process.env.SENDGRID_API_KEY;
-  const emailUsername = process.env.EMAIL_USERNAME;
-  const emailSendUsername = process.env.EMAILSEND_USERNAME;
+  const sendGridApiKey = "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";
+  const emailUsername = "zzsshwkevin@gmail.com";
+  const emailSendUsername = "kevinzhang090602@gmail.com";
 
   if (!sendGridApiKey || !emailUsername || !emailSendUsername) {
     console.error('One or more environment variables are not defined');
