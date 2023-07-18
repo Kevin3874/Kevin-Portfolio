@@ -118,7 +118,7 @@ const Home: NextPage = () => {
             <p className="text-2xl text-center max-w-lg mx-auto mb-2 text-[#D4A373]">Technologies:</p>
             <p className="text-center max-w-lg mx-auto mb-4">Firebase · React.js · React Native · Next.js · Git · Node.js · Azure DevOps · Angular 6</p>
             <div className="flex flex-wrap gap-4 justify-center mb-4">
-              <Link href="https://drive.google.com/file/d/1GvNdp-DH8GlxglWUYtUFaywgS9ZPYoRN/view?usp=sharing" target={"_blank"}>
+              <Link href="https://kevinzhang25.notion.site/Kevin-s-Resume-Download-1fcf8411f885460cb918ef2b9873cf3b?pvs=4" target={"_blank"}>
                 <button className="btn bg-[#D4A373] p-3 text-[#333] hover:bg-[#e5e5cc]">My Resume</button>
               </Link>
               <Link href="https://github.com/Kevin3874" target={"_blank"}>
