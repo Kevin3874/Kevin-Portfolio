@@ -98,7 +98,8 @@ const Home: NextPage = () => {
             <h1 className="text-5xl font-bold mb-8">In the past,</h1>
             <div className="flex flex-col md:flex-col gap-4">
               <p className="max-w-lg mx-auto mb-2">I have worked on several teams in different fields of Software Engineering: 
-              from Web development, Android app development, React Native development, and now, FullStack development.</p>
+              from Web development, Android app development, React Native development, and now, FullStack development, although
+               my role right now focuses primarily on Backend integration efforts.</p>
               <p className="max-w-lg mx-auto mb-2">
               I started off my journey with a startup called Quest2Learn. Initially, I joined as the Content Manager and Data Analyst, 
               designing, creating, and testing modules. However, my Sophomore year in college, after I transitioned to studying Computer Science,
