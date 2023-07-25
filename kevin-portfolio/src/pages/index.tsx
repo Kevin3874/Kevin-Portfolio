@@ -98,8 +98,8 @@ const Home: NextPage = () => {
             <h1 className="text-5xl font-bold mb-8">In the past,</h1>
             <div className="flex flex-col md:flex-col gap-4">
               <p className="max-w-lg mx-auto mb-2">I have worked on several teams in different fields of Software Engineering: 
-              from Web development, Android app development, React Native development, and now, FullStack development, although
-               my role right now focuses primarily on Backend integration efforts.</p>
+              from Web development, Android app development, and React Native development. Currently, my role focuses primarily 
+              on .NET Backend integration efforts.</p>
               <p className="max-w-lg mx-auto mb-2">
               I started off my journey with a startup called Quest2Learn. Initially, I joined as the Content Manager and Data Analyst, 
               designing, creating, and testing modules. However, my Sophomore year in college, after I transitioned to studying Computer Science,
@@ -115,9 +115,9 @@ const Home: NextPage = () => {
           </article>
           <article className="order-2 md:order-2 mx-4 md:mx-0 md:mr-20">
             <p className="text-2xl text-center max-w-lg mx-auto mb-2 text-[#D4A373]">Languages:</p>
-            <p className="text-center max-w-lg mx-auto mb-2">Python · Java · C/C++ · JavaScript/TypeScript · HTML/CSS · C#</p>
+            <p className="text-center max-w-lg mx-auto mb-2">Python · Java · C/C++ · JavaScript/TypeScript · HTML5 & CSS · C#</p>
             <p className="text-2xl text-center max-w-lg mx-auto mb-2 text-[#D4A373]">Technologies:</p>
-            <p className="text-center max-w-lg mx-auto mb-4">Firebase · React.js · React Native · Next.js · Git · Node.js · Azure DevOps · Angular 6</p>
+            <p className="text-center max-w-lg mx-auto mb-4">Firebase · .NET · React.js · React Native · Next.js · Git · Node.js · Azure</p>
             <div className="flex flex-wrap gap-4 justify-center mb-4">
               <Link href="https://kevinzhang25.notion.site/Kevin-s-Resume-Download-1fcf8411f885460cb918ef2b9873cf3b?pvs=4" target={"_blank"}>
                 <button className="btn bg-[#D4A373] p-3 text-[#333] hover:bg-[#e5e5cc]">My Resume</button>
