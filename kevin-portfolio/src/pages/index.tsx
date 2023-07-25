@@ -70,7 +70,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/KleanZ.ico" />
       </Head>
       <main className={`flex flex-col ${isLoaded ? 'animate-fade-in' : ''}`}>
-        <section id="section1" className="flex-grow flex flex-col-reverse md:flex-row">
+        <section id="section1" style={{ height: '88vh' }} className="flex-grow flex flex-col-reverse md:flex-row">
           <div className="order-1 md:order-2 w-full md:w-3/5 bg-[#CCD5AE] flex flex-col items-center justify-center text-[#333] p-8 relative">
             <div className={`mt-24 ${isLoaded ? 'animate-slide-in' : ''}`}> 
               <h1 className="text-5xl font-bold text-center mb-6  ">About Me</h1>
