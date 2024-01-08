@@ -196,17 +196,37 @@ const Home: NextPage = () => {
           </article>
           <article className="order-2 mx-4 md:order-2 md:mx-0 md:mr-20">
             <p className="mx-auto mb-2 max-w-lg text-center text-2xl text-[#D4A373]">
+              Technical Skills and Technologies:
+            </p>
+            <p className="mx-auto max-w-lg text-center text-1xl text-[#D4A373]">
               Languages:
             </p>
             <p className="mx-auto mb-2 max-w-lg text-center">
-              Python · Java · C/C++ · JavaScript/TypeScript · HTML5 & CSS · C#
+            Python, Java, C#, C/C++
             </p>
-            <p className="mx-auto mb-2 max-w-lg text-center text-2xl text-[#D4A373]">
-              Technologies:
+            <p className="mx-auto max-w-lg text-center text-1xl text-[#D4A373]">
+              Backend Development:
             </p>
-            <p className="mx-auto mb-8 max-w-lg text-center">
-              Firebase · .NET · React.js · React Native · Next.js · Git ·
-              Node.js · Azure
+            <p className="mx-auto mb-2 max-w-lg text-center">
+            Node.js, Express, REST API, Firebase, Socket.io, Microsoft Graph API, Puppeteer
+            </p>
+            <p className="mx-auto max-w-lg text-center text-1xl text-[#D4A373]">
+              Web Development:
+            </p>
+            <p className="mx-auto mb-2 max-w-lg text-center">
+            HTML5, CSS, JavaScript, TypeScript, React.js, Next.js, ASP .NET, Bootstrap
+            </p>
+            <p className="mx-auto max-w-lg text-center text-1xl text-[#D4A373]">
+              Mobile Development:
+            </p>
+            <p className="mx-auto mb-2 max-w-lg text-center">
+            React Native, Android Studio
+            </p>
+            <p className="mx-auto max-w-lg text-center text-1xl text-[#D4A373]">
+              DevOps and Collaboration:
+            </p>
+            <p className="mx-auto mb-4 max-w-lg text-center">
+            Git, Postman, ngrok, OAuth 2.0, HL7 FHIR, Docker
             </p>
             <div className="mb-4 flex flex-wrap justify-center gap-4">
               <Link
