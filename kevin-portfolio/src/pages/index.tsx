@@ -178,7 +178,7 @@ const Home: NextPage = () => {
                 }
               </p>
               <p className="mx-auto mb-2 max-w-lg">
-                HopDrop: A mobile food delivery app targeted at Hopkins' students! 
+                HopDrop: A mobile food delivery app targeted at Hopkins{"'"} students! 
                 This is built using react native, and we are currently working on 
                 getting it on the app and play stores.<br />
                 {
