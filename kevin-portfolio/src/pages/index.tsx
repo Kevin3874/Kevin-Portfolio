@@ -96,7 +96,7 @@ const Home: NextPage = () => {
               <div className="flex h-full flex-col justify-center">
                 <p className="mx-auto max-w-lg text-center text-xl">
                   {
-                    "I'm a rising Junior at JHU studying Computer Science with a minor in Applied Mathematics & Statistics. Currently working at Voyce Global as a Software Engineer."
+                    "I'm a combined BS/MSE student at JHU studying Computer Science. Currently working at Voyce Global as a Software Engineer."
                   }
                 </p>
               </div>
@@ -139,37 +139,48 @@ const Home: NextPage = () => {
             <div className="flex flex-col gap-4 md:flex-col">
               <p className="mx-auto mb-2 max-w-lg">
                 I have worked on several teams in different fields of Software
-                Engineering: from Web development, Android app development, and
-                React Native development. Currently, my role focuses primarily
-                on .NET Backend integration efforts.
+                Engineering. Most roles have been in backend development, but I
+                have also worked on frontend and mobile development. 
               </p>
               <p className="mx-auto mb-2 max-w-lg">
-                I started off my journey with a startup called Quest2Learn.
-                Initially, I joined as the Content Manager and Data Analyst,
-                designing, creating, and testing modules. However, my Sophomore
-                year in college, after I transitioned to studying Computer
-                Science, my role shifted into a Web Developer, and eventually, a
-                Team Lead. You can check out more about Quest2Learn
+                I also love teaching, and have been a TA for several courses at
+                Hopkins. I am currently a Lead CA for Gateway: Python, and a TA 
+                for Gen Chem Lab.
+              </p>
+              <p className="mx-auto mb-2 max-w-lg">
+                Some projects I have worked on are: <br /> <br />
+                TechStack: A website that scrapes tech products from popular
+                sites such as Amazon, Newegg, and BestBuy. I am currently adding
+                new features, and plan to hopefully get a permanent server up.<br />
                 {
                   <Link
                     className="link-hover text-[#D4A373]"
-                    href="https://www.q2l.app/"
+                    href="https://techstackshop.com"
                     target={"_blank"}
                   >
                     {" "}
-                    here.
+                    Check it out!
                   </Link>
                 }
               </p>
               <p className="mx-auto mb-2 max-w-lg">
-                During that time, I became a Python CA for Hopkin&apos;s Gateway
-                course. I was responsible for holding office hours, grading
-                assignments, and helping students with their projects. I also
-                joined a team called HopDrop, which focuses on creating a mobile
-                app for Hopkins students to get their Mobile Orders delivered to
-                them on campus. We started off as an Android app, and I am still
-                curently working on the React Native version of the app. You can
-                check out more about HopDrop{" "}
+                Flashcard Fighter: A gamefied-flashcard web app that allows you
+                to create your own flashcards and battle against other users.<br />
+                {
+                  <Link
+                    className="link-hover text-[#D4A373]"
+                    href="https://flashcard-fighter.vercel.app/"
+                    target={"_blank"}
+                  >
+                    {" "}
+                    Battle now!
+                  </Link>
+                }
+              </p>
+              <p className="mx-auto mb-2 max-w-lg">
+                HopDrop: A mobile food delivery app targeted at Hopkins' students! 
+                This is built using react native, and we are currently working on 
+                getting it on the app and play stores.<br />
                 {
                   <Link
                     className="link-hover text-[#D4A373]"
@@ -177,7 +188,7 @@ const Home: NextPage = () => {
                     target={"_blank"}
                   >
                     {" "}
-                    here.
+                    See the source code here!
                   </Link>
                 }
               </p>
