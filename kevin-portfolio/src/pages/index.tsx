@@ -140,7 +140,27 @@ const Home: NextPage = () => {
               <p className="mx-auto mb-2 max-w-lg">
                 I have worked on several teams in different fields of Software
                 Engineering. Most roles have been in backend development, but I
-                have also worked on frontend and mobile development. 
+                have also worked on frontend and mobile development. <br />
+                Currently working at:
+                {
+                  <Link
+                    className="link-hover text-[#D4A373]"
+                    href="https://web.voyceglobal.com/"
+                    target={"_blank"}
+                  >
+                    {" "}Voyce{" "}
+                  </Link>
+                }
+                and
+                {
+                  <Link
+                    className="link-hover text-[#D4A373]"
+                    href="https://briefs.aimply.io/"
+                    target={"_blank"}
+                  >
+                    {" "}Aimply
+                  </Link>
+                }
               </p>
               <p className="mx-auto mb-2 max-w-lg">
                 I also love teaching, and have been a TA for several courses at
