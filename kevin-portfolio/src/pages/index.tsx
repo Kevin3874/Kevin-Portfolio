@@ -91,7 +91,7 @@ const Home: NextPage = () => {
           <div className="relative order-1 flex w-full flex-col items-center justify-center bg-[#CCD5AE] p-8 text-[#333] md:order-2 md:w-3/5">
             <div className={`mt-24 ${isLoaded ? "animate-slide-in" : ""}`}>
               <h1 className="mb-6 text-center text-5xl font-bold  ">
-                About Me
+                About Me:
               </h1>
               <div className="flex h-full flex-col justify-center">
                 <p className="mx-auto max-w-lg text-center text-xl">
