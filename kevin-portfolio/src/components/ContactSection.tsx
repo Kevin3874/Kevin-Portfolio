@@ -48,9 +48,9 @@ export default function ContactSection() {
   return (
     <section
       id="section3"
-      className="flex min-h-screen flex-col justify-between bg-zinc-950"
+      className="flex flex-col justify-between bg-zinc-950 lg:min-h-screen"
     >
-      <div className="flex flex-grow flex-col items-center justify-center px-6 py-24">
+      <div className="flex flex-col items-center justify-center px-6 pb-12 pt-20 lg:flex-1 lg:pt-24">
         <div className="w-full max-w-lg">
           <h2 className="mb-2 text-center text-xs font-semibold uppercase tracking-widest text-blue-400">
             Get in touch

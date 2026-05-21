@@ -13,7 +13,7 @@ export default function NavDots({ currentPage, setCurrentPage }: Props) {
   };
 
   return (
-    <nav className="fixed bottom-6 right-5 z-50 flex flex-col gap-2">
+    <nav className="fixed bottom-6 right-5 z-50 hidden flex-col gap-2 lg:flex">
       {SECTION_IDS.map((_, i) => (
         <button
           key={i}
