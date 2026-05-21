@@ -7,24 +7,23 @@ type Props = {
 
 export default function NavDots({ currentPage, setCurrentPage }: Props) {
   const scrollToSection = (index: number) => {
-    if (index === 0) {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } else {
-      const el = document.getElementById(SECTION_IDS[index] ?? "");
-      if (el) window.scrollTo({ top: el.offsetTop, behavior: "smooth" });
-    }
+    const id = SECTION_IDS[index] ?? "";
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     setCurrentPage(index + 1);
   };
 
   return (
-    <nav className="fixed bottom-4 right-4 flex flex-col space-y-2">
+    <nav className="fixed bottom-6 right-5 z-50 flex flex-col gap-2">
       {SECTION_IDS.map((_, i) => (
-        <div
+        <button
           key={i}
-          className={`h-4 w-4 cursor-pointer rounded-full ${
-            currentPage >= i + 1 ? "bg-[#D4A373]" : "bg-white"
-          }`}
+          aria-label={`Jump to section ${i + 1}`}
           onClick={() => scrollToSection(i)}
+          className={`h-2 w-2 rounded-full transition-all duration-300 ${
+            currentPage === i + 1
+              ? "scale-125 bg-blue-500"
+              : "bg-zinc-600 hover:bg-zinc-400"
+          }`}
         />
       ))}
     </nav>

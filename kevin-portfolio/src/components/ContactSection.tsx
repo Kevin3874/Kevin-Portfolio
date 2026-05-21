@@ -37,83 +37,93 @@ export default function ContactSection() {
     const data = (await response.json()) as { success: boolean };
 
     if (data.success) {
-      toast.success("Email sent! I'll get back to you soon.", { position: "top-right" });
+      toast.success("Sent! I'll get back to you soon.", { position: "top-right" });
       form.reset();
       setFormErrors({ name: false, email: false, message: false });
     } else {
-      toast.error("Email could not be sent. Please try again later.", { position: "top-right" });
+      toast.error("Could not send. Please try again later.", { position: "top-right" });
     }
   };
 
   return (
     <section
       id="section3"
-      className="animate-fade-in flex min-h-screen flex-col justify-between bg-[#f5f5dc]"
+      className="flex min-h-screen flex-col justify-between bg-zinc-950"
     >
-      <div className="input-group flex flex-grow flex-col items-center justify-center p-8">
-        <h1 className="mb-8 text-center text-5xl font-bold text-[#333]">{contact.headline}</h1>
-        <h2 className="mb-12 text-center text-2xl text-[#333]">
-          {contact.subtext.map((line, i) => (
-            <span key={i}>
-              {line}
-              <br />
-            </span>
-          ))}
-        </h2>
-        <form className="w-full max-w-lg" onSubmit={handleSubmit}>
-          <div className="-mx-3 mb-6 flex flex-wrap">
-            <div className="mb-6 w-full px-3 md:mb-0 md:w-1/2">
-              <label className="mb-2 block font-bold text-[#333]" htmlFor="name">
-                Your Name
+      <div className="flex flex-grow flex-col items-center justify-center px-6 py-24">
+        <div className="w-full max-w-lg">
+          <h2 className="mb-2 text-center text-xs font-semibold uppercase tracking-widest text-blue-400">
+            Get in touch
+          </h2>
+          <h1 className="mb-3 text-center text-4xl font-extrabold tracking-tight text-zinc-100">
+            {contact.headline}
+          </h1>
+          <p className="mb-10 text-center text-zinc-400">
+            {contact.subtext.join(" ")}
+          </p>
+
+          <form className="space-y-5" onSubmit={handleSubmit}>
+            <div className="grid gap-5 sm:grid-cols-2">
+              <div>
+                <label
+                  className="mb-1.5 block text-sm font-medium text-zinc-300"
+                  htmlFor="name"
+                >
+                  Name
+                </label>
+                <input
+                  id="name"
+                  type="text"
+                  placeholder="Your name"
+                  className={`form-control ${formErrors.name ? "border-red-500" : ""}`}
+                  required
+                />
+                {formErrors.name && (
+                  <p className="mt-1 text-xs text-red-400">Required</p>
+                )}
+              </div>
+              <div>
+                <label
+                  className="mb-1.5 block text-sm font-medium text-zinc-300"
+                  htmlFor="email"
+                >
+                  Email
+                </label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="you@example.com"
+                  className={`form-control ${formErrors.email ? "border-red-500" : ""}`}
+                  required
+                />
+                {formErrors.email && (
+                  <p className="mt-1 text-xs text-red-400">Required</p>
+                )}
+              </div>
+            </div>
+            <div>
+              <label
+                className="mb-1.5 block text-sm font-medium text-zinc-300"
+                htmlFor="message"
+              >
+                Message
               </label>
-              <input
-                className={`form-control focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-[#333] focus:outline-none ${
-                  formErrors.name ? "border-red-500" : ""
-                }`}
-                id="name"
-                type="text"
-                placeholder="Enter your name"
+              <textarea
+                id="message"
+                placeholder="Hi, I'd love to connect!"
+                className={`form-control ${formErrors.message ? "border-red-500" : ""}`}
                 required
               />
-              {formErrors.name && <p className="text-red-500">Please enter your name</p>}
+              {formErrors.message && (
+                <p className="mt-1 text-xs text-red-400">Required</p>
+              )}
             </div>
-            <div className="w-full px-3 md:w-1/2">
-              <label className="mb-2 block font-bold text-[#333]" htmlFor="email">
-                Email Address
-              </label>
-              <input
-                className={`form-control focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-[#333] focus:outline-none ${
-                  formErrors.email ? "border-red-500" : ""
-                }`}
-                id="email"
-                type="email"
-                placeholder="Enter your email"
-                required
-              />
-              {formErrors.email && <p className="text-red-500">Please enter your email</p>}
-            </div>
-          </div>
-          <div className="mb-6">
-            <label className="mb-2 block font-bold text-[#333]" htmlFor="message">
-              Your Message
-            </label>
-            <textarea
-              className={`form-control focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-[#333] focus:outline-none ${
-                formErrors.message ? "border-red-500" : ""
-              }`}
-              id="message"
-              placeholder="Hi, I'd love to connect!"
-              required
-            />
-            {formErrors.message && <p className="text-red-500">Please enter your message</p>}
-          </div>
-          <div className="flex items-center justify-between">
-            <button className="button" type="submit">
+            <button className="button w-full" type="submit">
               Send Message
             </button>
-          </div>
-        </form>
-        <ToastContainer />
+          </form>
+        </div>
+        <ToastContainer theme="dark" />
       </div>
       <Footer />
     </section>

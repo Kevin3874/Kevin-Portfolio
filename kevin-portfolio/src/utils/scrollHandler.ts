@@ -22,10 +22,8 @@ const initializeScrollHandler = (setCurrentPage: (page: number) => void) => {
   const handleScroll = (e: WheelEvent) => {
     e.preventDefault();
     const now = Date.now();
-    if (now - lastScrollTime < 1200) return;
+    if (now - lastScrollTime < 1200 || isTransitioning) return;
     lastScrollTime = now;
-
-    if (isTransitioning) return;
 
     const sections = document.querySelectorAll("section");
     isTransitioning = true;
@@ -41,6 +39,7 @@ const initializeScrollHandler = (setCurrentPage: (page: number) => void) => {
       void smoothScrollTo(target.offsetTop).then(() => {
         setTimeout(() => {
           isTransitioning = false;
+          lastScrollTime = Date.now(); // restart cooldown from when the transition lands
           document.body.style.overflow = "auto";
         }, 0);
       });
@@ -63,6 +62,7 @@ const initializeScrollHandler = (setCurrentPage: (page: number) => void) => {
       void smoothScrollTo(target.offsetTop).then(() => {
         setTimeout(() => {
           isTransitioning = false;
+          lastScrollTime = Date.now();
           document.body.style.overflow = "auto";
         }, 500);
       });

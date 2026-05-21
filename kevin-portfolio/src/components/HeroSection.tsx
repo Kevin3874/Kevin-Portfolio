@@ -1,52 +1,67 @@
 import Image from "next/image";
+import Link from "next/link";
 import { siteContent } from "~/data/content";
 
 type Props = { isLoaded: boolean };
 
 export default function HeroSection({ isLoaded }: Props) {
-  const { hero, about } = siteContent;
+  const { hero, about, links } = siteContent;
 
   return (
     <section
       id="section1"
-      className="flex flex-grow flex-col-reverse md:h-[88vh] md:flex-row"
+      className="flex min-h-screen flex-col items-center justify-center bg-zinc-950 px-6 pt-20 md:flex-row md:gap-20 md:px-20 lg:px-32"
     >
-      {/* About column — right on desktop, bottom on mobile */}
-      <div className="relative order-1 flex w-full flex-col items-center justify-center bg-[#CCD5AE] p-8 text-[#333] md:order-2 md:w-3/5">
-        <div className={`mt-24 ${isLoaded ? "animate-slide-in" : ""}`}>
-          <h1 className="mb-6 text-center text-5xl font-bold">{about.headline}</h1>
-          <p className="mx-auto max-w-lg text-center text-xl">{about.bio}</p>
-        </div>
-        <div className="flex flex-row items-center justify-around pt-20 md:pt-32">
-          {about.highlights.map((h) => (
-            <p key={h.line1} className="mx-12 text-center">
-              {h.line1}
-              <br />
-              {h.line2}
-              <br />
-              {h.line3}
-            </p>
-          ))}
-        </div>
-      </div>
-
-      {/* Hero column — left on desktop, top on mobile */}
-      <div className="order-2 flex w-full flex-col items-center justify-center bg-[#f5f5dc] p-8 py-28 text-[#333] md:order-1">
+      {/* Photo */}
+      <div
+        className={`relative mb-12 flex-shrink-0 transition-all duration-700 md:mb-0 ${
+          isLoaded ? "opacity-100 scale-100" : "opacity-0 scale-95"
+        }`}
+      >
+        <div className="absolute inset-0 rounded-full bg-blue-500/25 blur-3xl" />
         <Image
           src={hero.photo}
           alt={`${hero.name} portrait`}
-          width={288}
-          height={288}
-          className="mb-8 w-48 rounded-full shadow-lg md:w-72"
+          width={260}
+          height={260}
           priority
+          className="relative h-52 w-52 rounded-full object-cover ring-2 ring-blue-500/30 md:h-64 md:w-64"
         />
-        <h1 className="mb-6 text-center text-6xl font-extrabold">{hero.name}</h1>
-        <div className="text-center">
-          {hero.titles.map((title) => (
-            <h2 key={title} className="typewriter text-3xl">
-              {title}
-            </h2>
-          ))}
+      </div>
+
+      {/* Content */}
+      <div
+        className={`max-w-lg transition-all duration-700 delay-100 ${
+          isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+        }`}
+      >
+        <span className="mb-5 inline-flex items-center rounded-full bg-blue-500/10 px-3 py-1 text-sm font-medium text-blue-400 ring-1 ring-inset ring-blue-500/20">
+          Software Engineer @ Meta · Instagram Growth
+        </span>
+        <h1 className="mb-5 text-5xl font-extrabold tracking-tight text-zinc-100 md:text-6xl lg:text-7xl">
+          {hero.name}
+          <span className="text-blue-400">.</span>
+        </h1>
+        <p className="mb-8 text-base leading-relaxed text-zinc-400 md:text-lg">
+          {about.bio}
+        </p>
+        <div className="flex flex-wrap gap-3">
+          <Link
+            href={links.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-lg bg-zinc-800 px-4 py-2 text-sm font-medium text-zinc-100 ring-1 ring-zinc-700 transition-colors hover:bg-zinc-700"
+          >
+            GitHub →
+          </Link>
+          <Link
+            href={links.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-lg bg-zinc-800 px-4 py-2 text-sm font-medium text-zinc-100 ring-1 ring-zinc-700 transition-colors hover:bg-zinc-700"
+          >
+            LinkedIn →
+          </Link>
         </div>
       </div>
     </section>
