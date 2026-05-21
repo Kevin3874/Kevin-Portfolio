@@ -36,7 +36,7 @@ export default function HeroSection({ isLoaded }: Props) {
         }`}
       >
         <span className="mb-5 inline-flex items-center rounded-full bg-blue-500/10 px-3 py-1 text-sm font-medium text-blue-400 ring-1 ring-inset ring-blue-500/20">
-          Software Engineer @ Meta · Instagram Growth
+          Software Engineer @ Meta · Instagram Graph Experiences
         </span>
         <h1 className="mb-5 text-5xl font-extrabold tracking-tight text-zinc-100 md:text-6xl lg:text-7xl">
           {hero.name}

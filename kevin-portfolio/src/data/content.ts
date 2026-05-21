@@ -7,23 +7,63 @@ export const siteContent = {
 
   hero: {
     name: "Kevin Zhang",
-    photo: "https://lh6.googleusercontent.com/EjVF2hhC1YbjDmeqfIsS5cMq1idMpONh8KCWlTuai-avYRjFd9AWGFXvbSqgWtHc44o=w2400",
+    photo:
+      "https://lh6.googleusercontent.com/EjVF2hhC1YbjDmeqfIsS5cMq1idMpONh8KCWlTuai-avYRjFd9AWGFXvbSqgWtHc44o=w2400",
     titles: ["Software Engineer", "@ Meta"],
   },
 
   about: {
     headline: "About Me",
-    bio: "Software Engineer at Meta working on Growth @ Instagram on the Graph Experiences team. Graduated from Johns Hopkins University with a BS/MSE in Computer Science.",
+    bio: "Software Engineer at Meta on the Instagram New User Experiences and Friending team, driving growth through A/B experimentation and product development. BS/MSE in Computer Science from Johns Hopkins University, May 2025.",
     highlights: [
       { line1: "Highly motivated,", line2: "a collaborative worker &", line3: "love learning new things" },
-      { line1: "Experience building", line2: "across backend, frontend,", line3: "and mobile" },
+      { line1: "Experience building", line2: "across mobile, backend,", line3: "and full-stack" },
     ],
   },
 
   experience: {
     headline: "In the past,",
-    body: "I have worked on several teams across different fields of Software Engineering — mostly backend, but also frontend and mobile. Previously, I was a Software Engineer at Voyce Global and a contributor at Aimply. I also spent time as a Lead CA for Gateway: Python at Johns Hopkins.",
+    body: "I've worked across mobile iOS, full-stack web, and AI/data engineering. Previously at Potions building AI-powered newsletter tooling, at Aimply.io running a data pipeline processing 10,000+ URLs daily for 15,000+ users, and at Voyce leading user management development for 1,000+ clients.",
   },
+
+  workExperience: [
+    {
+      company: "Meta",
+      role: "Software Engineer, Instagram Growth",
+      period: "July 2025 – Present",
+      location: "Menlo Park, CA",
+      highlight:
+        "On the Instagram New User Experiences & Friending team — drove +16,000 DAU increase through onboarding surfaces, push notification upsells, and A/B experimentation at scale.",
+      url: "https://about.meta.com/",
+    },
+    {
+      company: "Potions",
+      role: "Software Engineer",
+      period: "May 2024 – Nov 2024",
+      location: "Remote",
+      highlight:
+        "Built an AI agent interviewer for extracting user insights and generating social media content; developed intelligent newsletter blueprint generation via web scraping.",
+      url: "https://withpotions.com/",
+    },
+    {
+      company: "Voyce",
+      role: "Software Engineer Intern",
+      period: "May 2024 – Nov 2024",
+      location: "Sunrise, FL",
+      highlight:
+        "Led development of a user signup and dashboard system serving 1,000+ clients; scaled a SQL Server to handle 10,000+ monthly transactions with Stripe payment integration.",
+      url: "https://web.voyceglobal.com/",
+    },
+    {
+      company: "Aimply.io",
+      role: "Software Engineer",
+      period: "Jan 2024 – Nov 2024",
+      location: "Remote",
+      highlight:
+        "Built a data pipeline processing 10,000+ URLs daily for 15,000+ users; improved newsletter accuracy 20% via OpenAI & Tavily integration; cut processing time 500% with multi-threading.",
+      url: "https://briefs.aimply.io/",
+    },
+  ],
 
   projects: [
     {
@@ -52,23 +92,15 @@ export const siteContent = {
   skills: [
     {
       category: "Languages",
-      items: ["Python", "Java", "C#", "C/C++", "JavaScript", "TypeScript"],
+      items: ["Swift", "Objective-C", "Python", "JavaScript", "TypeScript", "C#", "C", "C++"],
     },
     {
-      category: "Backend Development",
-      items: ["Node.js", "Express", "REST API", "Firebase", "Socket.io", "Microsoft Graph API", "Puppeteer"],
+      category: "Full-Stack Development",
+      items: ["React.js", "Node.js", "Express", ".NET", "RESTful Services", "Firebase", "SQL Server", "OAuth 2.0"],
     },
     {
-      category: "Web Development",
-      items: ["React.js", "Next.js", "HTML5", "CSS", "Tailwind CSS", "ASP .NET", "Bootstrap"],
-    },
-    {
-      category: "Mobile Development",
-      items: ["React Native", "Android Studio"],
-    },
-    {
-      category: "DevOps & Tooling",
-      items: ["Git", "Docker", "Postman", "OAuth 2.0", "HL7 FHIR", "ngrok"],
+      category: "Platforms & Tooling",
+      items: ["LangChain", "OpenAI", "Stripe API", "Microsoft Graph API", "Redis", "Docker"],
     },
   ],
 
